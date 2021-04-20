@@ -1,0 +1,361 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Montserrat';
+}
+img{
+   width: 100%;
+}
+.container{
+    max-width: 1140px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.header{
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+}
+.nav_panel{
+    background: #282828;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    min-height: 65px;
+    position: fixed;
+    width: 100%;
+    z-index: 50;
+}
+.header_nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header_left{
+    display: flex;
+    align-items: center;
+}
+.header_list{
+    display: flex;
+}
+.header_list li a{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    display: inline-block;
+    margin-left: 30px;
+    color: #FFF;
+}
+.header_links{
+    display: flex;
+}
+.header_links a{
+    color: #FFF;
+    display: inline-block;
+    font-size: 20px;
+    display: inline-block;
+}
+.header_links a:first-child{
+    margin-right: 25px; 
+}
+.header_title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-grow: 1;
+    background: url(../images/Header.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.header_title h1{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 100px;
+    line-height: 75px; 
+    color: #FFF;
+    margin-bottom: 38px; 
+    font-family: 'Prosto One'
+}
+.header_title .header_link{
+    display: inline-block;
+    padding: 13px 14px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #171718;
+    background: #FFFFFF;
+    border-radius: 10px;
+}
+.header_link span{
+    display: inline-block;
+    margin-left: 11px;
+}
+.main{
+    background: #151515;
+    padding: 33px 0 55px;
+}
+.airpods{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.airpods_text p{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 27px;
+    color: #FFFFFF;
+}
+.airpods_text{
+    max-width: 538px;
+    width: 100%;
+}
+.airpods_img{
+    max-width: 538px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+.airpods_big{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 79px;
+}
+.item_left, 
+.item_right{
+    max-width: 333px;
+    width: 100%;
+}
+.item_left p,
+.item_right p{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+.item_center{
+    max-width: 418px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.item_center::before,
+.item_center::after{
+    content: '';
+    display: block;
+    max-width: 61px;
+    width: 100%;
+    height: 1px;
+    background: #c4c4c4;
+}
+.iphones{
+    display: flex;
+    justify-content: space-between;
+}
+.iphone{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 255px;
+    width: 100%;
+    background: #FFFFFF;
+    border-radius: 6px;
+    padding: 15px 0;
+}
+.iphone h3{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+}
+.iphone_img{
+    margin: 10px 0;
+}
+.price{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: #000000;
+}
+.iphone_link{
+    max-width: 161px;
+    width: 100%;
+    background: #151515;
+    text-align: center;
+    padding: 7px 0;
+    display: inline-block;
+    margin-top: 20px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.footer{
+    padding: 81px 0;
+    background: #282828;
+    box-shadow: 0px -4px 20px rgba(0, 0, 0, 0.25);
+}
+.footer_nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer_links a{
+    display: inline-block;
+    font-size: 45px;
+    color: #FFF;
+}
+.footer_links a:first-child{
+    margin-right: 29px;
+}
+@media(max-width:1110px){
+    .airpods{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .airpods_text p{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+        text-align: justify;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+    .airpods_img{
+        max-width: 250px;
+        width: 100%;
+        padding: 0;
+        margin-bottom: 50px;
+    }
+  
+}
+@media(max-width:1090px){
+    .item_left, 
+    .item_right{
+    max-width: 222px;
+    width: 100%;
+    }
+   .item_left p,
+   .item_right p{
+    font-size: 11px;
+    font-weight: normal;
+    line-height: 11px;
+    margin-top: 35px;
+    padding: 0;
+    }
+    .item_center{
+    max-width: 250px;
+    width: 100%;
+    margin-top: 35px;
+    }
+}
+@media(max-width:1150px){
+    .iphones{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-direction: column;
+    }
+    /* .iphones{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    } */
+    .iphone{
+        max-width: 200px;
+        width: 100%;
+        padding: 5px;
+        align-items: center;
+        margin-top: 35px;
+        justify-content: center;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+    .iphone h3{
+        font-size: 15px;
+        line-height: 18px;
+    }
+    .price{
+        font-size: 10px;
+        line-height: 14px;
+    }
+    .iphone_link{
+    max-width: 100px;
+    width: 100%;
+    background: #151515;
+    text-align: center;
+    padding: 5px 0;
+    display: inline-block;
+    margin-top: 20px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    }
+}
+@media(max-width:663px){
+    .header_title h1{
+        font-size: 40px;
+        line-height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .header_title .header_link{
+            padding: 10px 12px;
+            font-weight: 400;
+            font-size: 10px;
+            line-height: 15px;
+            border-radius: 5px;
+        }
+        .nav_panel{
+            min-height: 40px;
+            width: 100%;
+        }
+        .header_list li a{
+            font-style: normal;
+            font-weight: bold;
+            font-size: 10px;
+            line-height: 15px;   
+            margin-left: 20px;
+        }
+        .header_links a{
+            font-size: 15px;
+            margin-left: 15px;
+        }
+        .header_links a:first-child{
+            margin-right: 13px; 
+        }
+    }
+@media(max-width:410px){
+    .footer{
+        padding: 10px 0;
+    }
+    .footer_links a{ 
+        font-size: 35px;
+        margin-left: 35px;
+    }
+    .footer_links a:first-child{
+        margin-right: 23px;
+    }
+}
